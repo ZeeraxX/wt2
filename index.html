@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="aerosmith.css">
+</head>
+<body>
+    <div class="container1">
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#register">Ticket Booking</a></li>
+                <li><a href="#result">Ticketing Info</a></li>
+            </ul>
+        </nav>
+        <section id="home"><br><br><br>
+            <h1 style="color:red;">Welcome To METALLICA </h1>
+            <p style="color:goldenrod;">Concert Booking Online<br>
+            registration info in ticketing info</p>
+        </section>
+
+        <section id="register">
+            <h1 style="color:red;">Ticket Booking</h1>
+                <div class="wrapper">
+                    <div class="title">
+                       ticket Form
+                    </div>
+                    <div class="form">
+                        <div class="inputfield">
+                            <label> First Name :</label>
+                            <input type="text" class="input" id="fname">
+                        </div>
+                        <div class="inputfield">
+                            <label> Last Name :</label>
+                            <input type="text" class="input" id="lname">
+                        </div>
+                        <div class="inputfield">
+                            <label> Email ID :</label>
+                            <input type="email" class="input" id="email">
+                        </div>
+                        <div class="inputfield">
+                            <label> sex :</label>
+                            <div class="customselect" >
+                                <select id="gender">
+                                    <option value="">Select</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="other">Other</option>
+            
+                                </select>
+                            </div>
+                        </div>
+                        <div class="inputfield">
+                            <label> Phone Number :</label>
+                            <input type="number" class="input" id="mobile">
+                        </div>
+                        <div class="inputfield">
+                            <label class="check"> 
+                                <input type="checkbox" id="check">
+                                <span class="checkmark"></span>
+                            </label>
+                            <p>I Agree to The Terms and Conditions</p>
+                        </div>
+                        <div class="inputfield">
+                            <!--<button id="enter" class="btn"><a href="display.html">Register</a></button>-->
+                            <input id="enter" type="submit" value="Register" class="btn" >
+                        </div>
+            
+                    </div>
+                    
+                </div>
+                
+            
+        </section>
+
+
+        <section id="result">
+            <h1>Ticketing Info </h1>
+            <table id="display">
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email ID</th>
+                    <th>Gender</th>
+                    <th>Phone Number</th>
+                </tr>
+            </table>
+        </section>
+
+    </div>
+
+    
+    
+    <script src="aerosmith.js"></script>
+   
+</body>
+</html>
